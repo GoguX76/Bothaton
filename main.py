@@ -11,3 +11,4 @@ tm.sleep(10)
 system("clear")
 
 obtenerUsuario()
+obtenerEdad()

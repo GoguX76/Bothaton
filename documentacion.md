@@ -11,6 +11,6 @@ En este repositorio, estaré almacenando todo lo que estaré practicando para el
 ## Notas Día 1
 **.strip()** quita los espacios de un String, siendo conveniente para evitar cosas como " Juan ".
 
-**isalpha()** comprueba que, dentro de un String, todos los caracteres que se usen sean letras (a-z, A-Z), devoliendo **True**, y, en caso de que haya algún espacio, número o algo que no sea una letra, devuelve **False**
+**.isalpha()** comprueba que, dentro de un String, todos los caracteres que se usen sean letras (a-z, A-Z), devoliendo **True**, y, en caso de que haya algún espacio, número o algo que no sea una letra, devuelve **False**
 
 Los **if not** devuelven el resultado contrario o hacen la evaluación contraria, dependiendo lo que se quiere hacer. Por ejemplo, con **if not nom.strip()**, comprueba que, si después de quitar los espacios, el String sigue vacío, no devuelva False, sino que True, lo que permite cumplir la condición. Ahora, con **if not nom.isalpha()**, comprueba que **NO** haya ninguna letra dentro del String, y, al ser así, entra en el if y cumple la condición, todo esto visto en el archivo de functions.

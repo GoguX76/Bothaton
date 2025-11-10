@@ -25,3 +25,32 @@ def obtenerUsuario():
         nom = input(">> ").capitalize()
         if validacionUsuario(nom):
             return nom
+        
+#Función que valida que el usuario haya ingresado bien la edad.
+def validacionEdad(age):
+    try:
+        if not age.strip():
+            raise ValueError("El campo de edad no puede estar vacío.")
+        
+        if any(c.isalpha() for c in age):
+            raise ValueError("La edad no puede contener letras.")
+        
+        age_int = int(age)
+
+        if age_int <= 0:
+            raise ValueError("La edad no puede ser un numero negativo.")
+        
+        if age_int > 120:
+            raise ValueError("La edad no puede ser mayor a 120 años.")
+        
+        return True
+        
+    except ValueError as e:
+        print(f"Error: {e}")
+        return False
+    
+def obtenerEdad():
+    while True:
+        age = input(">> ")
+        if validacionEdad(age):
+            return age
