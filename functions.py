@@ -54,3 +54,82 @@ def obtenerEdad():
         age = input(">> ")
         if validacionEdad(age):
             return age
+
+def validacionGenero(gender):
+    try:
+        if not gender.strip():
+            raise ValueError("El campo de genero no puede estar vacío.")
+        
+        if not gender.strip().isalpha():
+            raise ValueError("El genero no puede tener números.")
+        
+        if len(gender) > 1:
+            raise ValueError("El genero solo puede tener un caracter (M/F).")
+        
+        if gender not in ["M", "F"]:
+            raise ValueError("Ha ingresado un valor erroneo.")
+        
+        return True
+    except ValueError as e:
+        print(f"Error: {e}")
+        return False
+    except TypeError as e:
+        print(f"Error: {e}")
+        return False
+    
+def obtenerGenero():
+    while True:
+        gender = input(">> ").upper()
+
+        if validacionGenero(gender):
+            if gender == "M":
+                gender = "Masculino"
+                return gender
+            else:
+                gender = "Femenino"
+                return gender
+            
+def almacenarDatos():
+    print("Para empezar, ingrese su nombre")
+    nom = obtenerUsuario()
+
+    print("Ahora, ingrese su edad")
+    age = obtenerEdad()
+
+    print("Por último, ingrese su genero")
+    gender = obtenerGenero()
+
+    datosUsuarios = {
+        "Nombre": nom,
+        "Edad": age,
+        "Genero": gender
+    }
+
+    return datosUsuarios
+
+def registrarUsuarios():
+    users = []
+
+    while True:
+        print("=== Registro de Usuarios ===")
+        data = almacenarDatos()
+        users.append(data)
+
+        registrar = input("¿Quiere ingresar a otro usuario? (S/N): ").upper()
+        if registrar != "S":
+            break
+    
+    return users
+
+def mostrarUsuarios(users):
+    if not users:
+        print("No se han encontrado usuarios en el sistema")
+        return
+    
+    print("=== USUARIOS REGISTRADOS ===")
+    for i, user in enumerate(users, 1):
+        print(f"Usuario {i}")
+        print(f"Nombre: {user["Nombre"]}")
+        print(f"Edad: {user["Edad"]}")
+        print(f"Genero: {user["Genero"]}")
+    print(f"Total de Usuarios: {len(users)}")
