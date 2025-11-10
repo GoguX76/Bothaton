@@ -1,5 +1,0 @@
-En esta carpeta (o repositorio, no se si lo subire a GitHub), se desarrollara
-todo lo relacionado con el próximo evento de Bothaton, todo para practicar
-y estar listo para el día del evento.
-Usaré este txt para documentar todos los avances y aprendizajes que vaya adquiriendo
-durante las semanas hasta los días del evento.
