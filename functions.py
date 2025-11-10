@@ -48,13 +48,15 @@ def validacionEdad(age):
     except ValueError as e:
         print(f"Error: {e}")
         return False
-    
+
+#Función que permite obtener la edad del usuario.  
 def obtenerEdad():
     while True:
         age = input(">> ")
         if validacionEdad(age):
             return age
 
+#Función que permite validar que el usuario haya ingresado bien su genero.
 def validacionGenero(gender):
     try:
         if not gender.strip():
@@ -76,7 +78,8 @@ def validacionGenero(gender):
     except TypeError as e:
         print(f"Error: {e}")
         return False
-    
+
+#Función que obtiene el genero que ingresó el usuario y lo transforma.
 def obtenerGenero():
     while True:
         gender = input(">> ").upper()
@@ -88,7 +91,8 @@ def obtenerGenero():
             else:
                 gender = "Femenino"
                 return gender
-            
+
+#Función que pide los datos a los usuarios, gracias a las demás funciones y las almacena en un diccionario.        
 def almacenarDatos():
     print("Para empezar, ingrese su nombre")
     nom = obtenerUsuario()
@@ -107,6 +111,7 @@ def almacenarDatos():
 
     return datosUsuarios
 
+#Función que registra a los usuarios en una lista para permitir escalabilidad.
 def registrarUsuarios():
     users = []
 
@@ -121,6 +126,7 @@ def registrarUsuarios():
     
     return users
 
+#Función que recorre la lista de usuarios y la muestra de manera ordenada.
 def mostrarUsuarios(users):
     if not users:
         print("No se han encontrado usuarios en el sistema")
