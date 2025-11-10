@@ -18,6 +18,9 @@ Los **if not** devuelven el resultado contrario o hacen la evaluación contraria
 ### Día 2 (10-11-2025)
 - Implementé dos funciones, una para validar que la edad que ingrese el usuario este bien y cumpla con las reglas del programa y otra que permite al usuario ingresar la edad.
 - Utilize **any()** y aprendí como funciona la creación de **variables temporales** o **variables de iteración**.
+- Implemente más funciones, las cuales validan y obtienen el genero que ingrese el usuario, mientras que las otras restantes registran a los usuarios a un diccionario, permitiendo también ver este mismo e ingresar varios usuarios al sistema, mostrándose estos de manera ordenada.
 
 ## Notas Día 2
-> Es mejor, para validar la edad, que se valide siendo esta un String, dependiendo de lo que se quiera hacer, y luego transformarla en un Int, como en mi caso, que primero valide si el campo estaba vacío y que no contuviera ninguna letra, ya que si fuera Int, sería un caso difícil. Luego de eso, ya transforme la edad a Int e hice las validaciones de rango de edad.
+Es mejor, para validar la edad, que se valide siendo esta un **String**, dependiendo de lo que se quiera hacer, y luego transformarla en un **Int**, como en mi caso, que primero valide si el campo estaba vacío y que no contuviera ninguna letra, ya que si fuera Int, sería un caso difícil. Luego de eso, ya transforme la edad a Int e hice las validaciones de rango de edad.
+
+Parece ser que el enumerate (luego corrijo esto si estoy mal), me permite recorrer una lista o diccionario enumeradamente, como bien dice el nombre de la función, así puedo mostrar esta en consola de manera más ordenada, tal como lo hace la función de mostrarUsuarios()
