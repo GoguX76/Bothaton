@@ -1,3 +1,5 @@
+import random as rd
+
 #Función que valida que el usuario haya ingresado bien el nombre.
 def validacionUsuario(nom):
     try:
@@ -18,14 +20,7 @@ def validacionUsuario(nom):
     except ValueError as e:
         print(f"Error: {e}")
         return False
-
-#Función que le pide al usuario ingresar su nombre y luego validarlo con validacionUsuario().   
-def obtenerUsuario():
-    while True:
-        nom = input(">> ").capitalize()
-        if validacionUsuario(nom):
-            return nom
-        
+    
 #Función que valida que el usuario haya ingresado bien la edad.
 def validacionEdad(age):
     try:
@@ -49,13 +44,6 @@ def validacionEdad(age):
         print(f"Error: {e}")
         return False
 
-#Función que permite obtener la edad del usuario.  
-def obtenerEdad():
-    while True:
-        age = input(">> ")
-        if validacionEdad(age):
-            return age
-
 #Función que permite validar que el usuario haya ingresado bien su genero.
 def validacionGenero(gender):
     try:
@@ -78,64 +66,3 @@ def validacionGenero(gender):
     except TypeError as e:
         print(f"Error: {e}")
         return False
-
-#Función que obtiene el genero que ingresó el usuario y lo transforma.
-def obtenerGenero():
-    while True:
-        gender = input(">> ").upper()
-
-        if validacionGenero(gender):
-            if gender == "M":
-                gender = "Masculino"
-                return gender
-            else:
-                gender = "Femenino"
-                return gender
-
-#Función que pide los datos a los usuarios, gracias a las demás funciones y las almacena en un diccionario.        
-def almacenarDatos():
-    print("Para empezar, ingrese su nombre")
-    nom = obtenerUsuario()
-
-    print("Ahora, ingrese su edad")
-    age = obtenerEdad()
-
-    print("Por último, ingrese su genero")
-    gender = obtenerGenero()
-
-    datosUsuarios = {
-        "Nombre": nom,
-        "Edad": age,
-        "Genero": gender
-    }
-
-    return datosUsuarios
-
-#Función que registra a los usuarios en una lista para permitir escalabilidad.
-def registrarUsuarios():
-    users = []
-
-    while True:
-        print("=== Registro de Usuarios ===")
-        data = almacenarDatos()
-        users.append(data)
-
-        registrar = input("¿Quiere ingresar a otro usuario? (S/N): ").upper()
-        if registrar != "S":
-            break
-    
-    return users
-
-#Función que recorre la lista de usuarios y la muestra de manera ordenada.
-def mostrarUsuarios(users):
-    if not users:
-        print("No se han encontrado usuarios en el sistema")
-        return
-    
-    print("=== USUARIOS REGISTRADOS ===")
-    for i, user in enumerate(users, 1):
-        print(f"Usuario {i}")
-        print(f"Nombre: {user["Nombre"]}")
-        print(f"Edad: {user["Edad"]}")
-        print(f"Genero: {user["Genero"]}")
-    print(f"Total de Usuarios: {len(users)}")

@@ -8,6 +8,3 @@ print("Este es un código para simular una especie de ChatBot, para practicar pa
 
 tm.sleep(10) #Pausa el programa por x cantidad de segundos.
 system("clear")
-
-usuarios = registrarUsuarios() #Variable que almacena la lista con los datos de los usuarios.
-mostrarUsuarios(usuarios) #Usamos la variable antes definida para mostrar los usuarios en el sistema.

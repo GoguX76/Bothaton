@@ -19,8 +19,14 @@ Los **if not** devuelven el resultado contrario o hacen la evaluación contraria
 - Implementé dos funciones, una para validar que la edad que ingrese el usuario este bien y cumpla con las reglas del programa y otra que permite al usuario ingresar la edad.
 - Utilize **any()** y aprendí como funciona la creación de **variables temporales** o **variables de iteración**.
 - Implemente más funciones, las cuales validan y obtienen el genero que ingrese el usuario, mientras que las otras restantes registran a los usuarios a un diccionario, permitiendo también ver este mismo e ingresar varios usuarios al sistema, mostrándose estos de manera ordenada.
+- Implemente y desarolle las **apis** para mi sistema, manejando ya las rutas para obtener usuarios, registrar usuarios y obtener usuarios mediante su id, junto a las validaciones ya hechas en el módulo de **functions** y con el manejo de errores con HTTPException.
+- Elimine funciones en **functions** que ya no se utilizaban, ya que estaban siendo reemplazados por la api.
 
 ## Notas Día 2
 Es mejor, para validar la edad, que se valide siendo esta un **String**, dependiendo de lo que se quiera hacer, y luego transformarla en un **Int**, como en mi caso, que primero valide si el campo estaba vacío y que no contuviera ninguna letra, ya que si fuera Int, sería un caso difícil. Luego de eso, ya transforme la edad a Int e hice las validaciones de rango de edad.
 
-Parece ser que el enumerate (luego corrijo esto si estoy mal), me permite recorrer una lista o diccionario enumeradamente, como bien dice el nombre de la función, así puedo mostrar esta en consola de manera más ordenada, tal como lo hace la función de mostrarUsuarios()
+El **enumerate()** me permite recorrer datos de manera enumerada, como bien dice la función, recorriendo elementos uno por uno, siendo una manera eficiente de recorrer listas o diccionarios y, también, evitar usar el típico contador.
+
+Se implementa la librería **FastAPI** para poder crear rutas api de manera rápida y sencilla. La aplicación de inicializa definiendo una variable como **FastAPI()** y, con esta misma variable, vas creando las diferentes rutas, lo que va a hacer esa ruta y los métodos que se van a utilizar en estas del **CRUD (Create, Read, Update, Delete)**.
+
+El **HTMLException** funciona igual que el **raise ValueError**, en el sentido de que sirve para lanzar errores mediante cualquier excepción, solo que, con **HTMLException**, vas a proporcionar el código de error (Ej: 400), y luego un mensaje detallando el error, siendo similar que **raise ValueError** pero para las apis.
