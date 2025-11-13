@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from functions import validacionUsuario, validacionGenero, validacionEdad
+from functions.functions import validacionUsuario, validacionGenero, validacionEdad
 import random as rd
 
 app = FastAPI() #Creación de la aplicación para manejar las apis.

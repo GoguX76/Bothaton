@@ -1,5 +1,5 @@
 from os import system
-from functions import main
+from functions.functions import main
 
 system("clear") #Permite limpiar la pantalla de lo que antes del system("clear/cls").
 

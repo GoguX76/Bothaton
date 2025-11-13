@@ -1,0 +1,48 @@
+# Ignorar archivo de configuración con credenciales
+bot/config.py
+
+# Ignorar entornos virtuales
+venv/
+env/
+.env
+.venv/
+
+# Ignorar archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.py[cod]
+*$py.class
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Ignorar archivos del IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+
+# Logs
+*.log
+
+# Bases de datos locales (por si agregas SQLite más adelante)
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos de sistema Windows
+Thumbs.db
+desktop.ini
+
+# Archivos de pytest (por si agregas tests)
+.pytest_cache/
+.coverage
+htmlcov/

@@ -41,3 +41,10 @@ Es importante que, para cada acción que involucre añadir o actualizar un usuar
 Revisar que siempre que los datos que se analicen sean los correctos.
 
 Siempre recordar como definiste lo que devuelve una ruta (Tuve muchos errores por olvidarme de eso). También para comprender que es lo que quiere lograr y a los índices a los que se quieren acceder.
+
+### Dia 4 (12-11-2025)
+- Organice la estructura de los archivos para que todo estuviera más ordenado en carpetas, así se sabe mejor que contiene cada cosa.
+- Cree pequeñas funciones para manejar lo que hará el bot mediante ciertos comandos que le de el usuario, aunque todavía no está completo ni han sido probadas debido a la mala conexión que poseo actualmente.
+
+## Notas Día 4
+> A pesar de no haber probado ni implementar las cosas del bot de manera más completa, no parece ser complicado. La estructura de las cosas es fácil de entender, como pedir que maneje tal función si el usuario inserta x mensaje y hacer que el bot muestre ese mensaje. Quizá se complica más cuando sea la hora de que el bot use las APIs creadas, pero eso lo veremos cuando pruebe todo paso a paso.
