@@ -22,7 +22,7 @@ def help_command(message):
         "Comandos Disponibles\n\n"
         "/start - Iniciar el bot\n"
         "/help - Ver esta ayuda\n"
-        "/registrar - Registras a un usuario"
+        "/registrar - Registras a un usuario\n"
         "/mostrar - Muestra a todos los usuarios en el sistema.",
         parse_mode='Markdown'
     )
