@@ -55,3 +55,9 @@ Siempre recordar como definiste lo que devuelve una ruta (Tuve muchos errores po
 - Decidí agregar comentarios (por lo menos, por esta ocasión), más detallados sobre cada cosa, para que se entienda mejor.
 
 > Al final, como dije en la nota del día anterior, tan difícil no es configurar los mensajes y cosas que hará el bot, pero si es tedioso y puedes cometer errores por eso mismo. Cada cosa, como es iniciar el bot o la API se hacen mediante funciones en el módulo **functions.py**, que luego son llamados en el archivo **main.py** para evitar la molesta tarea de escribir los comandos de ejecución de cada uno mediante consola.
+
+### Día 6 (16-11-2025)
+- Por el momento, no habrán cambios en el repositorio, ya que me encuentro estudiando como funciona la herramienta de Blue Prism para el Bothaton. En un día que me disponga o este con más tiempo, añadire nuevos métodos CRUD a la API para luego vincularlo con el Bot de Telegram.
+
+## Notas Día 6
+> Veré si es posible que pueda trabajar con Blue Prism dentro de mi mismo proyecto, para poder traer actualizaciones de este mismo.
