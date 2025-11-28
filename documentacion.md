@@ -1,4 +1,4 @@
-# Documentación practica Bothaton
+# Documentación practica TELEPY
 
 En este repositorio, estaré almacenando todo lo que estaré practicando para el uso de **API REST y Bot de Telegram**, con el propósito de usarlo como retroalimentación y, tal como se llama este archivo, documentar todo lo que aprendo y hago en este repositorio.
 
